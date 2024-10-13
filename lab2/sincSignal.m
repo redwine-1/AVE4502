@@ -4,17 +4,17 @@
 
 duration = 10;
 fs =  500;                          %sampling frequency
-t = -duration/2:1/fs:duration/2;    %time duration 
+t = -duration/2:1/fs:duration/2;    %time duration
 
 omega = [1 2 10];                   %angular frequencies
 
 figure;
-hold on;                            %to plot data on same figure 
+hold on;                            %to plot data on same figure
 
 %looping through the omega array
 for i=1:length(omega)
     sinc_func = sin(pi*omega(i)*t)./(pi.*t*omega(i));
-    plot(t, sinc_func,'DisplayName', ['\omega = ' num2str(omega(i))]);
+    plot(t, sinc_func,'DisplayName', ['\omega = ' num2str(omega(i))], "LineWidth", 1.3 );
 end
 
 
