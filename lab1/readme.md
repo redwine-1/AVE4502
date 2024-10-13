@@ -1,6 +1,14 @@
-# Generation of various signals and sequences
+# Experiment 1 
+### Tasks:
 
-1. unit impulse signal
-2. unit step signal 
-3. ramp signal
-4. rectangular signal
+1. Plot the continuous time signals
+    - unit impulse signal
+    - unit step signal
+    - ramp signal
+    - rectangular signal
+    
+2. Plot the discrete time unit signals
+    - unit impulse signal
+    - unit step signal
+    - ramp signal
+    - rectangular signal
