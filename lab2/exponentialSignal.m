@@ -18,6 +18,8 @@ for i=1:length(A)
 end
 hold off;
 grid on;
+xlabel("Time (s)")
+ylabel("Amplitude")
 legend('Interpreter', 'latex');
 title("x(t) for three different A ")
 
@@ -28,5 +30,7 @@ for i=1:length(d)
 end
 hold off;
 grid on;
+xlabel("Time (s)")
+ylabel("Amplitude")
 legend('Interpreter', 'latex');
 title("x(t) for three different d")

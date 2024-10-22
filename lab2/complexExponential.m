@@ -45,7 +45,7 @@ for i=1:3
     x2 = exp(d(i).*t) + A.*sin(2*pi*6.*t);
     plot(t, x2, "DisplayName", ['d = ' num2str(d(i))], "LineWidth", 1.2);
 end
-title(['$' num2str(A) 'e^{dt} \sin{2 \pi 5.5 t}$'],'Interpreter','latex');
+title(['$' num2str(A) 'e^{dt} + \sin{2 \pi 5.5 t}$'],'Interpreter','latex');
 grid on;
 hold off;
 legend;
@@ -57,7 +57,7 @@ for i=1:3
     x2 = exp(t) + A.*sin(2*pi*freq(i).*t);
     plot(t, x2, "DisplayName", ['f = ' num2str(freq(i))], "LineWidth", 1.2);
 end
-title(['$' num2str(A) 'e^{t} \sin{2 \pi f t}$'],'Interpreter','latex');
+title(['$' num2str(A) 'e^{t} + \sin{2 \pi f t}$'],'Interpreter','latex');
 grid on;
 grid on;
 hold off;
