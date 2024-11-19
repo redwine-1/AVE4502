@@ -12,15 +12,12 @@ t = -duration/2:1/fs:+duration/2;
 k1 = 2;
 k2 = 3;
 
-%unit step functions
-u_t = t >= 0;
-u_t_plus_1 = t >= -1;
-u_t_minus_1 = t >= 1;
-u_t_minus_2 = t >= 2;
+%unit step function
+u_t = @(t) t >= 0;
 
 % define signals
-x1 = u_t - u_t_minus_1;
-x2 = sin(10*t).*(u_t_plus_1-u_t_minus_2);
+x1 = u_t(t) - u_t(t-1);
+x2 = sin(10*t).*(u_t(t+1)-u_t(t-2));
 
 % define systems
 system1 = @(x) 2*x;
